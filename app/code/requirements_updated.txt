@@ -1,0 +1,31 @@
+# Claude Agent SDK — Python dependencies with MySQL support
+#
+# Install:
+#   pip install -r app/code/requirements_updated.txt
+# or (if using uv):
+#   uv pip install -r app/code/requirements_updated.txt
+
+# ── Web framework ─────────────────────────────────────────────────────────────
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0
+python-multipart>=0.0.9       # multipart/form-data support
+
+# ── Configuration ─────────────────────────────────────────────────────────────
+python-dotenv>=1.0.0          # loads .env file
+
+# ── Database (new) ────────────────────────────────────────────────────────────
+sqlalchemy>=2.0.0             # ORM; 2.x API used throughout
+pymysql>=1.1.0                # Pure-Python MySQL driver (no C extension needed)
+
+# ── Claude Agent SDK (existing) ───────────────────────────────────────────────
+# The project uses claude_agent_sdk; pin as needed for your installed version.
+# claude-agent-sdk>=0.1.0
+
+# ── HTTP client ───────────────────────────────────────────────────────────────
+httpx>=0.26.0
+
+# ── Optional: migrations (recommended for production) ─────────────────────────
+# alembic>=1.13.0             # schema migration tool
+
+# ── Optional: structured logging ──────────────────────────────────────────────
+# python-json-logger>=2.0.7

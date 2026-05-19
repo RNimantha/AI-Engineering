@@ -1,0 +1,6 @@
+
+1. when need to add ne requiemnts  with uv use following command
+{uv pip install -r requirments.txt,
+uv add fastapi langchain}
+
+2.
