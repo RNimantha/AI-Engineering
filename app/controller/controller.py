@@ -1,21 +1,3 @@
-"""
-FastAPI controller with MySQL persistence for the Claude Agent SDK demo.
-
-Drop-in replacement for app/controller/controller.py.  All existing
-endpoints are preserved with identical request/response contracts so the
-React frontend requires zero changes.
-
-New behaviour vs the original controller:
-  - Conversations, messages and tool-call events are written to MySQL.
-  - Sessions are tied to a user row via the optional X-Session-ID header.
-    The frontend can start sending  localStorage.getItem('sessionId')  as
-    that header to get persistent, per-user history; if the header is
-    absent the endpoint still works (uses a per-request anonymous session).
-  - /api/conversations, /api/inventory and /api/notes endpoints are added
-    without breaking the original /api/health and /api/chat routes.
-
-Place this file at: app/controller/controller.py
-"""
 
 import json
 import logging
@@ -30,16 +12,14 @@ from pydantic import BaseModel, Field
 from sqlalchemy import desc, text
 from sqlalchemy.orm import Session
 
-from database import get_db
-from inventory_service import InventoryService
-from models import AuditLog, Conversation, InventoryItem, Message, ToolCall, User, UserNote
+from database.database import get_db
+from service.inventory_service import InventoryService
+from models.models import AuditLog, Conversation, InventoryItem, Message, ToolCall, User, UserNote
 
-# The agent service is imported from the existing agents module — unchanged.
+
 from agent.agents import ClaudeAgentService
 
 logger = logging.getLogger(__name__)
-
-# Singleton agent service (stateless; safe to share across requests)
 _agent_service = ClaudeAgentService()
 
 app = FastAPI(title="ClaudeSDK Chat API")
@@ -245,7 +225,7 @@ async def chat(
         A new db session is opened here so the generator owns its own
         connection and is not racing with the outer request session.
         """
-        from database import SessionLocal
+        from database.database import SessionLocal
 
         gen_db = SessionLocal()
         full_response: list[str] = []

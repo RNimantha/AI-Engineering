@@ -1,11 +1,8 @@
 
 import uvicorn
 from dotenv import load_dotenv
-
-# Must load .env before importing database (engine reads DATABASE_URL at import time)
-load_dotenv()
-
-from database import check_connection, init_db  # noqa: E402
+load_dotenv() 
+from database.database import check_connection, init_db  # noqa: E402
 
 # Initialise tables once at startup (idempotent — safe to call every run)
 init_db()

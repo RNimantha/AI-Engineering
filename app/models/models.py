@@ -18,7 +18,7 @@ Relationship hierarchy:
     User ─ InventoryItem (many, user_id nullable → global items)
     User ─ UserNote (many)
 
-Place this file at: app/models.py
+Place this file at: app/models/models.py
 
 IMPORTANT: Column named `extra_data` is used instead of `metadata` because
 `metadata` is a reserved attribute on SQLAlchemy's DeclarativeBase class.
@@ -40,7 +40,7 @@ from sqlalchemy import (
 from sqlalchemy.orm import relationship
 from sqlalchemy.sql import func
 
-from database import Base
+from database.database import Base
 
 
 # ── Users & sessions ───────────────────────────────────────────────────────────

@@ -8,8 +8,8 @@ if _app_dir not in sys.path:
 
 from claude_agent_sdk import tool
 
-from database import SessionLocal
-from inventory_service import InventoryService
+from database.database import SessionLocal
+from service.inventory_service import InventoryService
 
 
 @tool("get_inventory", "List all inventory items with their quantities", {})

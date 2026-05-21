@@ -1,0 +1,17 @@
+Your Conversation Log:
+You: hey
+AI: Hello! How can I assist you today?
+
+You: I am nimantha
+AI: Hi Nimantha! Nice to meet you. How can I help you today?
+
+You: what is central city of englad
+AI: England does not have an official "central city," but its capital and largest city is London. London serves as the political, economic, and cultural hub of both England and the United Kingdom. If you're thinking about geographical centers, Coventry is often considered close to the geographic center of England. Is there anything specific you'd like to know about this topic?
+
+You: what is center of englad then
+AI: The geographic center of England is often considered to be near the village of Meriden in the West Midlands. Historically, Meriden was claimed to be the midpoint of England, although different methods of calculating geographic centers may lead to slightly different locations. It's important to note that such designations are somewhat symbolic and approximate. Let me know if there's anything else you'd like to know!
+
+You: then what is center of sri lanka
+AI: The geographic center of Sri Lanka is generally considered to be near the city of Matale. Matale is located in the Central Province of Sri Lanka, and the surrounding area is known for its beautiful landscapes and agricultural significance. The nearby Knuckles Mountain Range and the Aluvihare Rock Temple are popular attractions. If you have any more questions or need further information, feel free to ask!
+
+End of Conversation

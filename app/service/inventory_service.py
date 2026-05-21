@@ -4,7 +4,7 @@ import logging
 
 from sqlalchemy.orm import Session
 
-from models import AuditLog, InventoryItem
+from models.models import AuditLog, InventoryItem
 
 logger = logging.getLogger(__name__)
 

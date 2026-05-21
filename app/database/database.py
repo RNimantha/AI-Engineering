@@ -3,10 +3,10 @@ MySQL connection and session management for the Claude Agent SDK demo.
 
 Uses SQLAlchemy 2.x ORM with the PyMySQL driver.
 
-Place this file at: app/database.py
+Place this file at: app/database/database.py
 
 Quickstart:
-    from database import get_db, Base
+    from database.database import get_db, Base
     from sqlalchemy.orm import Session
 
     @app.get("/example")
@@ -110,7 +110,7 @@ def init_db() -> None:
     Call this once on application startup.
     """
     # Lazy import so models register with Base.metadata before create_all.
-    import models  # noqa: F401
+    import models.models  # noqa: F401
     Base.metadata.create_all(bind=engine)
     logger.info("Database tables created/verified.")
 
