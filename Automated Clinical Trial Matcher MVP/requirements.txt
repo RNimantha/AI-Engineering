@@ -1,0 +1,25 @@
+# ─────────────────────────────────────────────
+# Automated Clinical Trial Matcher MVP
+# Requirements
+# ─────────────────────────────────────────────
+
+# Anthropic Claude SDK — the only LLM dependency
+anthropic>=0.40.0
+
+# HTTP client for ClinicalTrials.gov API v2
+httpx>=0.27.0
+
+# Data validation & FHIR JSON modelling
+pydantic>=2.7.0
+
+# Environment variable management
+python-dotenv>=1.0.0
+
+# PDF parsing (PyMuPDF — faster and more accurate than pypdf)
+PyMuPDF>=1.24.0
+
+# CLI framework
+click>=8.1.0
+
+# Rich terminal output (progress, panels, tables)
+rich>=13.7.0

@@ -1,0 +1,90 @@
+# ============================================================
+# COMMANDS REFERENCE
+# ============================================================
+
+
+# ── UV ──────────────────────────────────────────────────────
+
+uv init                          # create new project
+uv add <package>                 # install package
+uv add --dev <package>           # install dev dependency
+uv add -r requirements.txt       # install from requirements file
+uv remove <package>              # uninstall package
+uv sync                          # sync dependencies from uv.lock
+uv run <script.py>               # run python script
+uv run uvicorn app.main:app      # run via uv
+uv pip install <package>         # pip-style install
+uv pip list                      # list installed packages
+uv lock                          # regenerate uv.lock
+uv venv                          # create virtual environment
+
+
+# ── GIT ─────────────────────────────────────────────────────
+
+git init                         # init new repo
+git clone <url>                  # clone repo
+git status                       # show changes
+git add .                        # stage all changes
+git add <file>                   # stage specific file
+git commit -m "message"          # commit staged changes
+git push                         # push to remote
+git push origin <branch>         # push specific branch
+git pull                         # pull latest changes
+git fetch                        # fetch without merge
+git branch                       # list branches
+git branch <name>                # create branch
+git checkout <branch>            # switch branch
+git checkout -b <branch>         # create and switch branch
+git merge <branch>               # merge branch into current
+git log --oneline                # short commit history
+git diff                         # show unstaged changes
+git stash                        # stash changes
+git stash pop                    # restore stashed changes
+git reset --hard HEAD            # discard all local changes
+
+
+# ── PYTHON ──────────────────────────────────────────────────
+
+python --version                 # check python version
+python <script.py>               # run script
+python -m venv venv              # create virtual env
+source venv/bin/activate         # activate venv (mac/linux)
+venv\Scripts\activate            # activate venv (windows)
+deactivate                       # deactivate venv
+pip install <package>            # install package
+pip install -r requirements.txt  # install from requirements
+pip freeze > requirements.txt    # export installed packages
+pip list                         # list installed packages
+
+
+# ── FASTAPI / UVICORN ────────────────────────────────────────
+
+uvicorn app.main:app --reload              # start dev server (auto-reload)
+uvicorn app.main:app --host 0.0.0.0 --port 8000   # custom host/port
+uvicorn app.main:app --workers 4          # production with workers
+uv run uvicorn app.main:app --reload      # run via uv
+
+
+# ── TERMINAL (mac/linux) ─────────────────────────────────────
+
+pwd                              # print current directory
+ls                               # list files
+ls -la                           # list files with details/hidden
+cd <folder>                      # change directory
+cd ..                            # go up one level
+cd ~                             # go to home directory
+mkdir <folder>                   # create directory
+mkdir -p <a/b/c>                 # create nested directories
+rm <file>                        # delete file
+rm -rf <folder>                  # delete folder (careful!)
+cp <src> <dest>                  # copy file
+mv <src> <dest>                  # move or rename file
+touch <file>                     # create empty file
+cat <file>                       # print file contents
+echo "text" > file.txt           # write text to file
+echo "text" >> file.txt          # append text to file
+clear                            # clear terminal
+history                          # show command history
+which <command>                  # find command location
+kill <PID>                       # kill process by ID
+lsof -i :<port>                  # find process on port

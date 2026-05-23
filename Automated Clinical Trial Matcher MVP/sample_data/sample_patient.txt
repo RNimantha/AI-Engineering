@@ -1,0 +1,138 @@
+PATIENT MEDICAL CHART
+=====================
+MedRecord #: 7741-B
+Attending Physician: Dr. Sarah Whitmore, MD, Oncology
+Facility: Lakeside Cancer Center, 4820 River Blvd, Chicago, IL 60601
+Phone: (312) 555-0177
+Date of Visit: 2026-05-15
+
+PATIENT INFORMATION
+-------------------
+Name: James Robert Callahan
+Date of Birth: 1972-09-14  (Age: 53)
+Gender: Male
+Address: 742 Evergreen Terrace, Springfield, IL 62701
+Email: james.callahan@email.com
+Phone: (217) 555-0342
+Emergency Contact: Linda Callahan, (217) 555-0343
+Insurance ID: BC-885521-XP
+
+CHIEF COMPLAINT
+---------------
+Patient presents for routine oncology follow-up. Recently completed 4 cycles
+of first-line carboplatin/pemetrexed chemotherapy for non-small cell lung
+cancer (NSCLC), adenocarcinoma subtype. Tolerating treatment reasonably well
+with grade 1-2 fatigue and mild peripheral neuropathy.
+
+DIAGNOSIS
+---------
+Primary: Non-Small Cell Lung Cancer (NSCLC), Adenocarcinoma
+  - Stage: IIIB (T3 N2 M0)
+  - Molecular: EGFR exon 19 deletion positive
+  - PD-L1 TPS: 45%
+  - ALK: Negative
+  - ROS1: Negative
+  - KRAS: Negative
+
+Secondary Diagnoses:
+  - Type 2 Diabetes Mellitus (HbA1c 7.4%, well-controlled)
+  - Hypertension (controlled on Lisinopril)
+  - Former smoker (quit 8 years ago, 30 pack-year history)
+
+CURRENT MEDICATIONS
+-------------------
+1. Pemetrexed 500 mg/m² IV (maintenance, every 21 days)
+2. Metformin 1000 mg PO BID
+3. Lisinopril 10 mg PO daily
+4. Ondansetron 8 mg PRN (for chemo-induced nausea)
+5. Loratadine 10 mg PO daily (allergic rhinitis)
+6. Aspirin 81 mg PO daily
+
+ALLERGIES
+---------
+- Penicillin: rash (documented)
+- Sulfonamides: severe urticaria (documented)
+- NKDA otherwise
+
+PRIOR TREATMENT HISTORY
+-----------------------
+Cycle 1-4: Carboplatin AUC 5 + Pemetrexed 500mg/m²  (2025-11-01 to 2026-02-15)
+  - Best response: Partial Response (PR) per RECIST 1.1
+  - No dose reductions required
+Currently on pemetrexed maintenance monotherapy (started 2026-03-01)
+
+PERFORMANCE STATUS
+------------------
+ECOG Performance Status: 1 (Ambulatory, restricted in physically strenuous
+activity but ambulatory and able to carry out work of a light or sedentary
+nature)
+
+RECENT LABORATORY RESULTS (Drawn: 2026-05-10)
+----------------------------------------------
+Complete Blood Count:
+  WBC:         7.2  x10^9/L    [Ref: 4.5-11.0]
+  RBC:         4.1  x10^12/L   [Ref: 4.5-5.9]
+  Hemoglobin:  12.8 g/dL       [Ref: 13.5-17.5]  * LOW
+  Hematocrit:  38.4 %          [Ref: 41-53]       * LOW
+  Platelets:   198  K/μL       [Ref: 150-400]     NORMAL
+  ANC:         3.4  K/μL       [Ref: 1.8-7.5]     NORMAL
+  Lymphocytes: 1.8  K/μL       [Ref: 1.0-4.8]     NORMAL
+
+Comprehensive Metabolic Panel:
+  Creatinine:  0.9  mg/dL      [Ref: 0.7-1.3]     NORMAL
+  eGFR:        >60  mL/min     NORMAL
+  ALT:         28   U/L        [Ref: 7-56]         NORMAL
+  AST:         32   U/L        [Ref: 10-40]        NORMAL
+  Total Bilirubin: 0.8 mg/dL   [Ref: 0.1-1.2]     NORMAL
+  Albumin:     3.6  g/dL       [Ref: 3.5-5.0]     NORMAL
+
+Tumor Markers:
+  CEA:         8.4  ng/mL      [Ref: <3.0]         ELEVATED
+  CA 19-9:     22   U/mL       [Ref: <37]          NORMAL
+
+Metabolic:
+  HbA1c:       7.4  %          [Ref: <5.7]         ELEVATED (controlled DM)
+  Fasting Glucose: 118 mg/dL   [Ref: 70-100]       ELEVATED
+
+IMAGING SUMMARY (CT Chest/Abdomen/Pelvis — 2026-04-30)
+-------------------------------------------------------
+- Primary lesion: 3.2 x 2.8 cm right upper lobe mass (reduced from 4.1 x 3.5 cm at baseline)
+- Mediastinal adenopathy: persistent, subcentimeter nodes, no new lesions
+- No distant metastases identified
+- No pleural effusion
+- Assessment: Continued partial response, stable disease in mediastinum
+
+CLINICAL ASSESSMENT & PLAN
+---------------------------
+Patient is a 53-year-old male with Stage IIIB EGFR-mutant NSCLC (exon 19 del)
+currently on pemetrexed maintenance with continued partial response.
+
+Discussion points:
+1. EGFR mutation status makes patient a candidate for EGFR-targeted therapy
+   (osimertinib). Given the partial response to current regimen and EGFR+ status,
+   consider clinical trial enrollment for EGFR TKI combinations or novel agents.
+
+2. PD-L1 45% — may benefit from immunotherapy trials (PD-1/PD-L1 inhibitors)
+   though caution given ongoing pemetrexed maintenance.
+
+3. Patient and family counselled on clinical trial options. Patient is
+   INTERESTED in participating in a clinical trial. Good performance status
+   (ECOG 1) makes him an eligible candidate for most trials.
+
+4. Repeat imaging scheduled in 8 weeks.
+5. Continue current maintenance chemotherapy pending trial enrollment decision.
+
+PHYSICIAN NOTES
+---------------
+Patient understands the nature of clinical trials and has been referred to our
+research coordinator. Preliminary assessment: excellent candidate for EGFR-
+targeted combination trials or immunotherapy trials given molecular profile,
+ECOG status, adequate organ function, and prior response to platinum-based
+chemotherapy.
+
+Next appointment: 2026-06-15 with Dr. Sarah Whitmore
+Research Coordinator Contact: research@lakesidecancercenter.org
+
+Electronically signed: Dr. Sarah Whitmore, MD
+License: IL-M-58821
+Date/Time: 2026-05-15 14:32:07

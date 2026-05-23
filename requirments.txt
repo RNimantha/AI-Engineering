@@ -3,3 +3,11 @@ fastapi
 langchain
 claude_agent_sdk
 uvicorn
+google-adk[extensions]
+langchain_core
+langchain_openai
+anthropic
+anthropic 
+openai 
+python_dotenv 
+httpx

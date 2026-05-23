@@ -57,12 +57,115 @@ button {
   cursor: pointer;
 }
 
+.workspace-app {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100dvh;
+  max-height: 100dvh;
+  overflow: hidden;
+}
+
+.workspace-tabbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid var(--border);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(248, 250, 252, 0.96));
+  backdrop-filter: blur(10px);
+}
+
+.workspace-tabbar-copy {
+  min-width: 0;
+}
+
+.workspace-tabbar-copy h1 {
+  margin: 0.18rem 0 0;
+  font-size: 1rem;
+}
+
+.workspace-tabbar-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-light);
+}
+
+.workspace-tablist {
+  display: flex;
+  align-items: stretch;
+  gap: 0.75rem;
+}
+
+.workspace-tab {
+  display: grid;
+  gap: 0.15rem;
+  min-width: 220px;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.9);
+  text-align: left;
+  transition:
+    border-color 150ms,
+    transform 150ms,
+    box-shadow 150ms;
+}
+
+.workspace-tab:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(17, 24, 39, 0.06);
+}
+
+.workspace-tab.is-active {
+  border-color: rgba(91, 110, 245, 0.28);
+  background: linear-gradient(180deg, rgba(238, 242, 255, 0.95), rgba(255, 255, 255, 0.98));
+  box-shadow: 0 12px 24px rgba(91, 110, 245, 0.12);
+}
+
+.workspace-tab-eyebrow {
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brand);
+}
+
+.workspace-tab-label {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.workspace-tab-description {
+  font-size: 0.76rem;
+  color: var(--text-muted);
+}
+
+.workspace-panels,
+.workspace-panel {
+  min-height: 0;
+}
+
+.workspace-panels {
+  height: 100%;
+  overflow: hidden;
+}
+
+.workspace-panel {
+  height: 100%;
+  overflow: hidden;
+}
+
 /* === SHELL === */
 .shell {
   display: grid;
   grid-template-columns: 260px 1fr;
-  height: 100dvh;
-  max-height: 100dvh;
+  height: 100%;
+  max-height: 100%;
   overflow: hidden;
 }
 
@@ -1083,6 +1186,19 @@ button {
 
 /* === RESPONSIVE === */
 @media (max-width: 768px) {
+  .workspace-tabbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .workspace-tablist {
+    flex-direction: column;
+  }
+
+  .workspace-tab {
+    min-width: 0;
+  }
+
   .shell {
     grid-template-columns: 1fr;
   }
